@@ -37,6 +37,12 @@ CORS_ALLOWED_ORIGINS = [
     'https://asilbek-karomatov.dev'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://asil-backend-b4854d78d95a.herokuapp.com',
+    'https://api.asilbek-karomatov.dev',
+    'https://asilbek-karomatov.dev'
+]
+
 # Application definition
 
 INSTALLED_APPS = [
