@@ -6,7 +6,13 @@ class AboutSerializer(serializers.ModelSerializer):
     class Meta:
         model = About
 
-        fields = ['firstname','lastname','image','about_text','phone_number','email','github_link','telegram_link','instagram_link']
+        fields = ['id','firstname','lastname','image','about_text','phone_number','email','github_link','telegram_link','instagram_link']
+
+class AboutDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = About
+        fields = ['id','firstname','lastname','image','about_text','phone_number','email','github_link','telegram_link','instagram_link']
+
 
 
 class ProjectsSerializer(serializers.ModelSerializer):
@@ -19,3 +25,4 @@ class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
         fields = ['name','email','message','answer']
+
